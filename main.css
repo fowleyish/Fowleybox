@@ -1,0 +1,28 @@
+html {
+    background-color: #2e2e31;
+}
+
+* {
+    text-transform: uppercase;
+    font-family: roboto, arial, sans-serif;
+    text-decoration: none;
+}
+
+#navigation {
+    display: flex;
+    flex-flow: row nowrap;  
+}
+
+.navItem a {
+    color: #e1e1e1;
+}
+
+.navItem {
+    margin: 0 2% 0 0;
+    font-weight: bold;
+}
+
+.navItem a:hover {
+    color: white;
+    transition-duration: 0.3s;
+}

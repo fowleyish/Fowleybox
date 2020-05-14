@@ -1,0 +1,72 @@
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#buttons {
+    width: 25%;
+    display: grid;
+    grid-template-areas: 
+        'a p p p'
+        'a p p p'
+        'a c c c';
+    grid-gap: 10px;
+    height: 20vw;
+}
+
+#aboutButton {
+    background-color: #fff125;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: end;
+}
+
+#aboutLink {
+    display: grid;
+    grid-area: a;
+}
+
+#projectsButton {
+    background-color: #1d88fb;
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
+    align-items: start;
+}
+
+#projectsLink {
+    display: grid;
+    grid-area: p;
+}
+
+#contactButton {
+    background-color: #39ff86;
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    align-items: start;
+}
+
+#contactLink {
+    display: grid;
+    grid-area: c;
+}
+
+.mainButton {
+    padding: 20px;
+    font-weight: 600;
+    color: #2E2E31;
+    transition-duration: 0.4s;
+}
+
+.mainButton:hover {
+    font-size: 1.6em;
+    transition-duration: 0.4s;
+}
+
+.bi.bi-person-square, .bi.bi-file-code, .bi.bi-card-heading {
+    font-size: 4em;
+}
