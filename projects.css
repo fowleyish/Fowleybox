@@ -1,0 +1,112 @@
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#projectsContainer {
+    width: 40%;
+    color: #e1e1e1;
+    display: grid;
+    grid-template-areas: 
+        'x x a a b'
+        'c c a a b'
+        'c c d d d'
+        'e e d d d';
+    grid-gap: 10px;
+    text-transform: uppercase;
+}
+
+.bi.bi-file-code {
+    color: #1d88fb;
+    font-size: 1.7em;
+}
+
+#projectsHeader {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    font-size: 1.2em;
+    padding-left: 2%;
+    grid-area: x;
+}
+
+.projectLink {
+    background-color: #1d88fb;
+    color: #e1e1e1;
+    font-weight: 600;
+    padding: 20px;
+    transition-duration: 0.4s;
+}
+
+.projectLink:visited {
+    color: #e1e1e1;
+}
+
+.projectLink:hover {
+    color: #e1e1e1;
+    font-size: 1.6em;
+    transition-duration: 0.4s;
+}
+
+#customList, #bst, #battleShipGame, #funWithLinq, #fowleyBoxSrc {
+    display: flex;
+    flex-flow: column;
+}
+
+#customList {
+    align-items: end;
+    justify-content: end;
+}
+
+#bst {
+    align-items: start;
+    justify-content: start;
+}
+
+#battleShipGame {
+    align-items: end;
+    justify-content: center;
+}
+
+#funWithLinq {
+    align-items: start;
+    justify-content: start;
+}
+
+#fowleyBoxSrc {
+    align-items: center;
+    justify-content: start;
+}
+
+#customListLink {
+    grid-area: a;
+}
+
+#bstLink {
+    grid-area: b;
+}
+
+#battleShipLink {
+    grid-area: c;
+}
+
+#linqLink {
+    grid-area: d;
+}
+
+#fowleyBoxLink {
+    grid-area: e;
+}
+
+.bi {
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+
+#sectionTitle {
+    padding-left: 3%;
+}

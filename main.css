@@ -3,7 +3,6 @@ html {
 }
 
 * {
-    text-transform: uppercase;
     font-family: roboto, arial, sans-serif;
     text-decoration: none;
 }
@@ -15,6 +14,7 @@ html {
 
 .navItem a {
     color: #e1e1e1;
+    text-transform: uppercase;
 }
 
 .navItem {
