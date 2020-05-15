@@ -1,0 +1,119 @@
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#contactContainer {
+    width: 30%;
+    color: #2E2E31;
+    display: grid;
+    grid-template-areas: 
+        'h b b l'
+        'e b b l'
+        'e b b g'
+        's s p p'
+        'd d d d';
+    grid-gap: 10px;
+    height: 24vw;
+}
+
+#contactHeader {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    grid-area: h;
+    line-height: 0;
+    color: #e1e1e1;
+}
+
+.bi.bi-card-heading {
+    color: #39ff86;
+    font-size: 1.7em;
+}
+
+#sectionTitle {
+    font-size: 1.7em;
+    padding-left: 2%;
+    text-transform: uppercase;
+}
+
+.contactButton {
+    background-color: #39ff86;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.contactButton {
+    display: flex;
+    flex-direction: column;
+    color: #2E2E31;
+    transition-duration: 0.4s;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+#contactDetails {
+    color: #e1e1e1;
+    display: grid;
+    grid-area: d;
+    line-height: 0;
+    justify-content: flex-end;
+}
+
+.contactButton:visited {
+    color: #2E2E31;
+}
+
+.contactButton:hover {
+    font-size: 1.6em;
+    transition-duration: 0.4s;
+}
+
+.contactButton .bi {
+    font-size: 3em;
+    padding-bottom: 10px;
+}
+
+#email {
+    grid-area: e;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+#telephone {
+    grid-area: p;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#linkedIn {
+    grid-area: l;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+}
+
+#blog {
+    grid-area: b;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+#github {
+    grid-area: g;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+#stackOverflow {
+    grid-area: s;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+}

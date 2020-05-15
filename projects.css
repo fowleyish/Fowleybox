@@ -6,7 +6,7 @@
 }
 
 #projectsContainer {
-    width: 40%;
+    width: 33%;
     color: #e1e1e1;
     display: grid;
     grid-template-areas: 
@@ -16,6 +16,7 @@
         'e e d d d';
     grid-gap: 10px;
     text-transform: uppercase;
+    height: 24vw;
 }
 
 .bi.bi-file-code {
@@ -48,7 +49,7 @@
 
 .projectLink:hover {
     color: #e1e1e1;
-    font-size: 1.6em;
+    font-size: 1.4em;
     transition-duration: 0.4s;
 }
 

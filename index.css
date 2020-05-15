@@ -9,12 +9,22 @@
     width: 25%;
     display: grid;
     grid-template-areas: 
+        't t t t'
         'a p p p'
         'a p p p'
-        'a c c c';
+        'b p p p'
+        'b c c c';
     grid-gap: 10px;
-    height: 20vw;
+    height: 22vw;
     text-transform: uppercase;
+}
+
+#siteTitle {
+    text-align: left;
+    grid-area: t;
+    color: #e1e1e1;
+    line-height: 0;
+    margin-bottom: 0;
 }
 
 #aboutButton {
@@ -56,6 +66,19 @@
     grid-area: c;
 }
 
+#blogButton {
+    background-color: #ff49ad;
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    align-items: end;
+}
+
+#blogLink {
+    display: grid;
+    grid-area: b;
+}
+
 .mainButton {
     padding: 20px;
     font-weight: 600;
@@ -68,6 +91,6 @@
     transition-duration: 0.4s;
 }
 
-.bi.bi-person-square, .bi.bi-file-code, .bi.bi-card-heading {
+.bi {
     font-size: 4em;
 }
