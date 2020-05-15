@@ -117,3 +117,26 @@
     align-items: end;
     justify-content: start;
 }
+
+@media only screen and (max-width: 1100px) {
+    #contactContainer {
+        width: 60%;
+        margin: 10px 0;
+        padding-top: 30px;
+    }
+    #main {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #contactContainer {
+        width: 100%;
+        grid-template-areas: 
+            'h h h h h'
+            'l l l b b'
+            'g g s s s'
+            'p p p e e'
+            'd d d d d';
+    }
+}

@@ -68,3 +68,34 @@
     color: #fff9a3;
     transition-duration: 0.4s;
 }
+
+@media only screen and (max-width: 1100px) {
+    #aboutContainer {
+        width: 60%;
+        margin: 10px 0;
+        padding-top: 30px;
+    }
+    #main {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #aboutContainer {
+        width: 100%;
+        grid-template-areas: 
+            'h'
+            'b'
+            's';
+    }
+    #selfieBox {
+        width: 80%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #selfieBox img {
+        object-fit: cover;
+        height: auto;
+    }
+}
