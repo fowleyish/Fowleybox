@@ -12,8 +12,8 @@
     grid-template-areas: 
         'x x a a b'
         'c c a a b'
-        'c c d d d'
-        'e e d d d';
+        's s s d d'
+        'e e e d d';
     grid-gap: 10px;
     text-transform: uppercase;
     height: 24vw;
@@ -53,7 +53,7 @@
     transition-duration: 0.4s;
 }
 
-#customList, #bst, #battleShipGame, #funWithLinq, #fowleyBoxSrc {
+#customList, #bst, #battleShipGame, #funWithLinq, #fowleyBoxSrc, #superheroes {
     display: flex;
     flex-flow: column;
 }
@@ -83,6 +83,11 @@
     justify-content: start;
 }
 
+#superheroes {
+    align-items: center;
+    justify-content: center;
+}
+
 #customListLink {
     grid-area: a;
 }
@@ -101,6 +106,10 @@
 
 #fowleyBoxLink {
     grid-area: e;
+}
+
+#superheroesLink {
+    grid-area: s;
 }
 
 .bi {
@@ -127,10 +136,10 @@
     #projectsContainer {
         width: 100%;
         grid-template-areas: 
-            'x x x'
-            'a a e'
-            'b b b'
-            'c d d';
+            'x x x x'
+            'a a e e'
+            'b b s s'
+            'c d d d';
     }
     #projectsHeader {
         justify-content: start;
